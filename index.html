@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custofirst Enterprises</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background: #fffefb; color: #333; }
+    header { background: #075e54; color: white; padding: 1.5rem 1rem; text-align: center; }
+    nav { background: #064e3b; display: flex; justify-content: center; padding: 0.5rem; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    section.hero { background: url('https://source.unsplash.com/1600x500/?kerala,food') center/cover no-repeat; color: white; padding: 4rem 1rem; text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.2rem; }
+    section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
+    .products, .about, .contact { margin-top: 2rem; }
+    .products h2, .about h2, .contact h2 { margin-bottom: 1rem; color: #075e54; }
+    .product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .product-card { border: 1px solid #ccc; padding: 1rem; background: white; border-radius: 8px; }
+    .product-card img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
+    footer { background: #075e54; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: 0.7rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding: 40px;">
-  <h1>Welcome to Custofirst Enterprises</h1>
-  <p>Authentic Kerala food products delivered globally.</p>
-  <p>Website under construction – stay tuned!</p>
+<body>
+  <header>
+    <h1>Custofirst Enterprises</h1>
+    <p>Kerala’s finest food products delivered worldwide</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Pure. Traditional. Trusted.</h1>
+    <p>From Kerala to your kitchen – experience authenticity</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Custofirst Enterprises Pvt Ltd is based in Kasaragod, Kerala. We specialize in rice-based products like Puttu podi and Idli rice, relabeled under our own brand or white-labeled for distributors in the UK and beyond. Our mission is to offer premium quality at competitive prices.</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?puttu" alt="Puttu Podi">
+        <h3>Puttu Podi</h3>
+        <p>Soft, fresh, and traditionally ground rice flour for authentic Kerala breakfasts.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?idli" alt="Idli Rice">
+        <h3>Idli Rice</h3>
+        <p>Perfect texture and taste for fluffy idlis and dosas, made from selected Matta rice.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?kerala,spices" alt="Masalas">
+        <h3>Masalas</h3>
+        <p>A range of spice blends curated to capture the essence of Kerala cuisine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:custofirstenterprises@gmail.com">info@custofirst.com</a></p>
+    <p>Phone: <a href="tel:+918089132073">+91 80891 32073</a></p>
+    <a href="https://wa.me/918089132073" class="whatsapp-btn">Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Custofirst Enterprises. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
